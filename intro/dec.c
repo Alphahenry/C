@@ -1,9 +1,14 @@
 #include<stdio.h>
+//use define to declare constatnts
+#define PI 3.14
 
 int main(){
- 
-   float PI = 3.14;
-   printf("PI is %f", PI);
+  int radius = 5;
+
+double area = PI * radius * radius;
+printf("The area of the circle is %lf", area);
+
+   
 
     return 0;
 }

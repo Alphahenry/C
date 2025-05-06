@@ -77,46 +77,57 @@ if(first_digit == 1){
         break;
     }
 
-}else{
+}else if(first_digit == 2){
+    printf("Twenty");
 
-
-    switch (first_digit)
+    
+    switch (second_digit)
     {
+    case 1:
+        printf("-one");
+        break;
+
     case 2:
-        printf("twenty-");
+        printf("-two");
         break;
 
     case 3:
-        printf("thirty-");
+        printf("-three");
         break;
-
+        
     case 4:
-        printf("fourty-");
+        printf("-four");
         break;
 
     case 5:
-        printf("fifty-");
+        printf("-five");
         break;
-        
+
     case 6:
-        printf("sixty-");
+        printf("-six");
         break;
 
     case 7:
-        printf("seventy-");
-        break;
-
-    case 8:
-        printf("eighty-");
-        break;
-
-    case 9:
-        printf("ninety-");
+        printf("-seven");
         break;
     
+    case 8:
+         printf("-eight");
+         break;
+
+      
+    case 9:
+        printf("-nine");
+        break;
+
+
     default:
         break;
     }
+
+
+
+
 }
 
     return 0;

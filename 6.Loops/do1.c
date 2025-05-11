@@ -2,7 +2,8 @@
 //output.the number has 2 digits
 #include<stdio.h>
 int main(){
-    int digits = 0, n;
+    int digits = 0;
+    int n;
     printf("Enter 2 digit number: ");
     scanf("%d", &n);
 
@@ -12,7 +13,7 @@ int main(){
         digits++;
         
         
-    } while (n>10);
+    } while (n>0);
     
 
 

@@ -1,30 +1,32 @@
 #include<stdio.h>
 int main(){
     int e;
-
-     int n;
+float fact = 1;
+     float n;
     printf("Print the value of n: ");
-    scanf("%d", &n);
+    scanf("%f", &n);
     
     
-   
-    
-    int series;
+   //find factorial of number n
+   if (n >= 1){
+            for (float i = 1; i <= n; i++){
+                    fact *= (1.0/i);
 
-    for (int i = 0; i < n; i++)
-    {
-        if (n == 0 || n == 1)
-        {
-            return 1;
+                    
         }
 
-        e = 1/n * 1/n;
-        
-        
-    }
+        printf("factorial is: %f", fact);
 
-    
-    printf("%d", e);
+   }else if (n == 0)
+   {
+      fact = 1;
+   }else{
+    printf("factorialdoesnt exist");
+   }
+   
+ 
+   
+   
     
     return 0;
 }

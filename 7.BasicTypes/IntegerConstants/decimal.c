@@ -10,7 +10,7 @@ int main(){
 
 
     printf("%d\n", x);
-    printf("%d\n", x2);
+    printf("%d\n", x2);//becomes 9 since 011 is octal for 9
 
     return 0;
 }

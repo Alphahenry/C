@@ -4,13 +4,12 @@ int main(){
 
     int char_1;
 
-    printf("Enter char: ");
-    char_1 = getchar();
 
     printf("%c", char_1);
     
     //declare variables
     int i,n;//n is no of entries
+    int count = 0;
 
     i = 1;
   //titleof the table
@@ -19,7 +18,7 @@ int main(){
     //request user for num of entries
 
     printf("Enter number of entries: ");
-    scanf("%hd",&n);
+    scanf("%d",&n);
     
     printf("Number\t\tSquare\n");
     printf("_________________________\n");
@@ -28,7 +27,16 @@ int main(){
         printf("%5d%13d\n", i, i*i);
 
         i++;
+        count++;
 
+        if (count == 24)
+        {
+            continue;
+            printf("press Enter to continue:  ");
+            char_1 = getchar();
+        }
+        
 
+    }
     return 0;
 }

@@ -2,41 +2,29 @@
 
 int main(){
 
-    int char_1;
-
-
-    printf("%c", char_1);
     
     //declare variables
     int i,n;//n is no of entries
-    int count = 0;
-
-    i = 1;
-  //titleof the table
 
     printf("This is the square tables\n");
     //request user for num of entries
 
     printf("Enter number of entries: ");
     scanf("%d",&n);
+    getchar(); //remove '\n' from buffer
+
     
     printf("Number\t\tSquare\n");
     printf("_________________________\n");
-    while (i <= n)
+    for (i = 1; i<= n;i++)
     {
         printf("%5d%13d\n", i, i*i);
-
-        i++;
-        count++;
-
-        if (count == 24)
+        if (i % 24 == 0)
         {
-            continue;
-            printf("press Enter to continue:  ");
-            char_1 = getchar();
+          printf("Press enter to continue: ");
+          while(getchar() != '\n');
         }
         
-
     }
     return 0;
 }

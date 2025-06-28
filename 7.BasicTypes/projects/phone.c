@@ -4,7 +4,7 @@ int main(){
  char ch;
  printf("Enter phone number: ");
 
- while (ch = getchar() != '\n')
+ while ((ch = getchar()) != '\n')
  {
     switch (ch)
     {

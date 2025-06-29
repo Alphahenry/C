@@ -3,9 +3,10 @@
 int main(){
     int hour;
     int minute;
+    char Am_Pm;
 
     printf("Enter 24hr  time: ");
-    scanf("%d:%d", &hour,&minute);
+    scanf("%d:%d %c", &hour,&minute, &Am_Pm);
 
     if ((hour == 8 && minute > 15 ))
     {

@@ -19,6 +19,22 @@ int main(){
         printf("\n");
         
     }
+    int row_sum = 0;;
+
+    printf("The sum of rows is: ");
+    //sum the row1
+    for (int i = 0; i < 5; i++)
+    {
+        for (int j = 0; j< 5; j++)
+        {
+            row_sum = row_sum + myarr[i][j];
+            
+        }
+          printf(" %d", row_sum);
+    }
+  
+    
+
     
 
 

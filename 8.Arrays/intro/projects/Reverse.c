@@ -27,6 +27,23 @@ int main(){
 
   //reversing the array
 
+  
+  char rev[max_size] = "";
+  //length of sentence
+
+  int length = strlen(sent1);
+
+  int i = length -1;
+  int j = 0;
+  while (i >= 0)
+  {
+    rev[j] = sent1[i];
+    i--;
+    j++;
+  }
+  
+  printf("%s", rev);
+
 
 
 

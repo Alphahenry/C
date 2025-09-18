@@ -2,16 +2,21 @@
 
 #include<stdio.h>
 
-void day_of_year(month, day, year);
+int day_of_year(int month, int day, int year);
 int main(){
    //get user input
 
    int month, day,year;
 
-   printf("Enter month, day, year: %d,%d,%d: \n");
+   printf("Enter month, day, year: \n");
    scanf("%d,%d,%d", &month,&day,&year);
-   
+
+   day_of_year(month,day,year);
 
     return 0;
 }
 
+int day_of_year(int month,int day,int  year){
+    printf("The current day is: %d,%d,%d", month,day,year);
+
+}

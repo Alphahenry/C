@@ -7,7 +7,7 @@
 //DECLARE EXTER VARIABLE
 int secret_number;
 
-//prototypes
+//function prototypes
 void initialize_number_generator(void);
 void choose_new_secret_number();
 void read_guesses();

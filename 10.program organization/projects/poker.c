@@ -1,0 +1,116 @@
+#include<stdio.h>>
+#include<stdbool.h>
+#include<stdlib.h>
+
+#define   NUM_RANKS 13
+#define  NUM_SUITS 4
+#define  NUM_CARDS 5
+
+/*External variables*/
+
+int num_in_ranks[NUM_RANKS];
+int num_in_suits[NUM_SUITS];
+bool straight,flash,three,four;
+
+/*prototypes*/
+void read_cards();
+void analyze_hand();
+void print_result();
+
+/*main function*/
+int main(){
+    for(;;){
+        read_cards();
+        analyze_hand();
+        print_result();
+    }
+}
+
+
+void read_cards(){
+    bool card_exists[NUM_RANKS] [NUM_SUITS];
+    char ch, rank_ch, suit_ch;
+    int rank,suit;
+    bool bad_card;
+    int cards_read = 0;
+
+    for (rank  = 0; rank < NUM_RANKS; rank++)
+    {
+        num_in_ranks[rank] = 0;
+        for (suit = 0; suit< NUM_SUITS; suit++)
+        {
+            card_exists[rank][suit] = false;
+        }
+        
+    }
+    for (suit  = 0; suit < NUM_SUITS; suit++)
+    { 
+        num_in_suits[suit] = 0;
+    }
+
+    while (cards_read < NUM_CARDS)
+    {
+        bad_card = false;
+
+        printf("Enter a card: ");
+
+        rank_ch = getchar();
+
+        switch (rank_ch)
+        {
+        case '0' :
+            exit(EXIT_SUCCESS);
+            break;
+
+        case '2':
+            rank = 0;
+            break;
+        
+        case '3':
+         rank = 1;
+            
+            break;
+        case '4':
+            rank = 2;
+            break;
+        case '5':
+            rank = 3;
+            break;
+        case '6':
+            rank = 4;
+            break;
+        case '7' :
+            rank = 5;
+            break;
+        case '8':
+            rank = 6;
+            break;
+        case '9':
+            rank = 7;
+            break;   
+        case 't': 'T';
+            rank = 8;
+            break;
+        case 'j': 'J';
+            rank = 9;
+            break;
+        case 'q': 'Q';
+            rank = 10;
+            break;
+      case 'k': 'K';
+            rank = 11;
+            break;
+       case 'A': 'a';
+            rank = 12;
+            break;
+
+        default:
+            bad_card = true;
+        }
+    }
+    
+    
+    
+}
+void analyze_hand();
+void print_result();

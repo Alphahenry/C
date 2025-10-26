@@ -94,13 +94,13 @@ void read_cards(){
         case 'j': 'J';
             rank = 9;
             break;
-        case 'q': 'Q';
+        case 'q': case 'Q':
             rank = 10;
             break;
-      case 'k': 'K';
+      case 'k': case 'K':
             rank = 11;
             break;
-       case 'A': 'a';
+       case 'A': case 'a':
             rank = 12;
             break;
 
@@ -109,7 +109,49 @@ void read_cards(){
         }
     }
     
+    suit_ch = getchar();
+
+    switch(suit_ch){
+        case 'c': case 'C':
+            suit = 0;
+            break;
+
+        case 'd':case 'D':
+            suit = 1;
+            break;
+
+        case 'h':case 'H': suit = 2; break;
+        case 's':case 'S': suit = 3; break;
+
+        default: bad_card = true;
+
+    }
+    while ((ch = getchar()) != '\n')
+    {
+        if (ch != ' ')
+        {
+            bad_card = true;
+        }
+        
+
+        if (bad_card)
+        {
+            printf("Badcard; ignored\n.");
+        }else if (card_exists[rank][suit])
+        {
+            printf("Duplicate card.ignored.\n");
+        }
+        else{
+            num_in_ranks[rank]++;
+            num_in_suits[suit]++;
+            card_exists[rank][suit] = true;
+            cards_read++;
+        }
+        
+        
+    }
     
+
     
 }
 void analyze_hand();

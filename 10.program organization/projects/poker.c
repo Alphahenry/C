@@ -154,5 +154,33 @@ void read_cards(){
 
     
 }
-void analyze_hand();
+void analyze_hand(){
+    int num_consec = 0;
+    int rank,suit;
+    straight = false;
+    flash = false;
+    four = false;
+    three = false;
+    pairs = 0;
+
+    //check for flash
+    for(suit = 0; suit < NUM_SUITS; suit++){
+        if (num_in_suits[suit] == NUM_CARDS)
+        {
+            flash = true;
+        }
+        
+    }
+
+    //check for straight
+    rank = 0;
+    while (num_in_ranks[rank]==0)
+    {
+        rank++;
+    }
+
+   
+    
+
+}
 void print_result();

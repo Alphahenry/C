@@ -17,5 +17,12 @@ int main(){
    printf("%d\n", i);
    printf("%d\n", *p);
 
+
+   //testing if p is a pointer variable to i
+
+   *p = 2;
+
+   printf("new value of i is : %d\n", i);
+   printf("pointer variable value is: %d", *p);
     return 0;
 }

@@ -4,7 +4,7 @@ int main(){
 
 
     int i,j, *p, *q;
-    i = 1;
+    // i = 1;
 
     //copy address of i into p
 //example one of assigning pointer var
@@ -14,8 +14,7 @@ int main(){
 
     q = p;
 
-    //address of i(cintents of p) is copied to q
-
+    //address of i(cintents of p) is copied to q                                                                            
    *q =2;
 
    printf("The value of i is : %d\n", i);

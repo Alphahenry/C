@@ -1,22 +1,28 @@
 #include<stdio.h>
 
-
-//prototype
 void pay_amount(int dollars, int *twenties, int *tens, int *fives, int *ones){
-    int bill_20;
-    twenties = &bill_20;
 
-    int bill_10;
-    tens = &bill_10;
 
-    int bill_5;
-    fives = &bill_5;
+    int rem;
 
-    int bill_1;
-    ones = &bill_1;
+ 
+ *twenties =   dollars / 20;
+ dollars = dollars - (*twenties * 20);
+ 
 
-    printf("Enter US dollar amount: \n");
-    scanf("%d", &dollars);
+ 
+
+ *tens = dollars/10;
+ dollars = dollars - (*tens * 10);
+ 
+
+*fives = dollars / 5;
+dollars = dollars - (*fives * 5);
+
+*ones = dollars /1;
+ 
+
+
 
     
 
@@ -24,7 +30,15 @@ void pay_amount(int dollars, int *twenties, int *tens, int *fives, int *ones){
 
 
 int main(){
-   pay_amount();
+    int amount = 0, bill_20, bill_10, bill_5, bill_1;
+    printf("Enter US dollar amount: \n");
+    scanf("%d", &amount);
+   pay_amount(amount,&bill_20,&bill_10,&bill_5,&bill_1);
+
+   printf("bill_20 is : %d\n", bill_20);
+   printf("bill_10 is : %d\n", bill_10);
+   printf("bill_5 is %d\n", bill_5);
+   printf("bill_1 is %d\n", bill_1);
  
 
     return 0;

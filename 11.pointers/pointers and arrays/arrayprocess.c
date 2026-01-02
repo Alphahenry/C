@@ -24,7 +24,7 @@ int main(){
    
    //array processing
 
-   sum =0;
+   sum = 0;
 
    for ( p = &a[0]; p < &a[N]; p++)
    {

@@ -19,7 +19,8 @@ int main(){
     //hexadecimal memory address
     printf("hexadecimal : %x\n", &a);
 
-
+  //this also prints adress of a
+  printf("adress of a: %x\n", p);
 
 
 

@@ -15,8 +15,13 @@ int main(){
 
     //therefore to print the value of a we use indirect operator
     printf("value of a = %d\n", *p);
+   
+    //printing the address of a 
+    printf("adress of a is : %x\n", &a);
 
-
+    //print the adress of p 
+    printf("The adress of p is: %x\n", p);
+    
 
     return 0;
 }

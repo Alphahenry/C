@@ -6,7 +6,7 @@ int main(){
 
    float a = 28, b= 34;
 
-   float *g, *s, *p;
+   float *g, *s, *p, *r;
 
    g = &a;
     
@@ -14,8 +14,15 @@ int main(){
 
    p = s;
 
-   printf("The value of  s is: %.2f", *s);
-   printf("The value of p is: %.2f", *p);
+   printf("The value of  s is: %.2f\n", *s);
+   printf("The value of p is: %.2f\n", *p);
+
+   //avoiding segfault
+    r = &a;
+
+    *r = *g;
+
+    printf("Value of r is: %f\n", *r);
 
 
     return 0;

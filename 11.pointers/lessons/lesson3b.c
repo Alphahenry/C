@@ -12,7 +12,7 @@ int main(){
     
    s = g;
 
-   p = s;//
+   p = s;
 
    printf("The value of  s is: %.2f", *s);
    printf("The value of p is: %.2f", *p);

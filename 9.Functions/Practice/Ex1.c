@@ -2,9 +2,9 @@
 
 
 
-   double average(double a, double b){
+   double average(double a, double b, double c){
 
-		return (a + b)/ 2;
+		return (a + b + c)/ 2;
 	}
 
  
@@ -19,7 +19,7 @@ int main(){
 
 	scanf("%lf%lf%lf", &x,&y,&z);
 
-	printf("The average of %g and %g is  %g", x,y,average(x,y));
+	printf("The average of %g and %g and  %g is %f", average(x,y,z));
 
 
 

@@ -1,6 +1,6 @@
 #include<stdio.h>
 #define STR_LEN 80
-
+#define N  11
 
 //student details
 char name[20];
@@ -10,13 +10,14 @@ int total_points;
 char grade;
 char sub[50];
 int max_subjects = 7;
+int sub_points[N];
 
 int students_points();
 
 void print_details();
 
 int main(){
-    
+
    
 
     print_details();
@@ -24,8 +25,12 @@ int main(){
 }
 
 int students_points(){
+    for (int i = 0; i < 11; i++)
+    {
+        
+    }
     
-    
+   
     
 
 }

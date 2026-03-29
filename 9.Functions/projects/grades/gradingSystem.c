@@ -8,7 +8,7 @@ int adm;
 char sub[40];
 int total_points;
 char grade;
-char sub[50];
+char sub[50] = {"Math, Eng, Kisw, Bio, Chem, phy, Agri/Bust, Hist/geo, Cre "};
 int max_subjects = 7;
 int sub_points[N];
 

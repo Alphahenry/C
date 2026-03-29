@@ -1,24 +1,31 @@
 #include<stdio.h>
-#define N  11
 
 //student details
 char name[20];
 int adm;
 int total_points;
 char grade;
-char subjects;
-char *sub[] = {"Math", "Eng", "Kisw", "Bio", "Chem", "phy", "Agri/Bust", "Hist/geo", "Cre"};
+
+char *subjects[] = {"Math", "Eng", "Kisw", "Bio", "Chem", "phy", "Agri/Bust", "Hist/geo", "Cre"};
+
+
 int max_subjects = 7;
-int sub_points[N];
+int sub_points[9];
 
 int students_points();
 
 void print_details();
 
 int students_points(){
-    for (int  i = 0; i < N; i++)
+    
+    char **ptr = &subjects[0];
+
+    for (int  i = 0; i < 9; i++)
     {
-        printf("Enter grade for subject %c", sub[i]);
+        
+        printf("Enter grade for subject:  %s\n",*(ptr + i));
+        
+        
     }
     
 }

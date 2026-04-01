@@ -29,7 +29,7 @@ int calc_total_points(){
 
     for (int i = 0; i < N; i++)
     {
-      total_points += sub_points[i];
+      total_points += sub_points[i++];
         
 
     }

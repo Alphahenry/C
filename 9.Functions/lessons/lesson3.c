@@ -1,4 +1,4 @@
-//calling by value vs call by reference
+//calling by value
 #include <stdio.h>
 
 
@@ -14,11 +14,10 @@ void display_numbers(int a, int b){
     printf("value of numbers are: a = %d and b  = %d\n", a,b);
 }
 int main(){
-   int x,y;
-   int z = 30, q = 40;
+   int a = 20,b = 10;
     
-    display_numbers(x,y);
-    display_numbers(z, q);
+    display_numbers(a,b);
+    printf("a = %d and b = %d\n", a,b);
 
 
 

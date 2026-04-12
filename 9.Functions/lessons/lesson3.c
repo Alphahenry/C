@@ -1,4 +1,4 @@
-//calling by value
+//calling by value(value changes if you change parametere values in main function)
 #include <stdio.h>
 
 

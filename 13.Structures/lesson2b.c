@@ -13,7 +13,7 @@ int main(){
     
     printf("Customer details: \n");
 
-    printf("\n%s %ld %f %s \n", cust.acc_name,cust.account_num,cust.balance, cust.type_acc);
+    printf("\n%s \n%ld \n%f\n %s \n", cust.acc_name,cust.account_num,cust.balance, cust.type_acc);
 
 
 
@@ -21,10 +21,7 @@ int main(){
 
 
 
-    // scanf("Account Name : %c", &customer.acc_name);
-    // scanf("Account Number: %d", &customer.account_num);
-    // scanf("Account Balance: %f", &customer.balance);
-    // scanf("Type of Account: %c", &customer.type_acc);
+    
 
 
 }

@@ -15,13 +15,6 @@ int main(){
 
     printf("\n%s \n%ld \n%f\n %s \n", cust.acc_name,cust.account_num,cust.balance, cust.type_acc);
 
-
-
-
-
-
-
-    
-
+return 0;
 
 }

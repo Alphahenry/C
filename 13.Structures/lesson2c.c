@@ -11,7 +11,7 @@ struct student{
 
 int main(){
 
-//declare a variable struct of 40 students
+//declare a variable struct of 4 students
 struct student s[4];
 
 //enter info for each student
@@ -25,7 +25,7 @@ for (int i = 0; i < 3; i++)
 printf("These are the new students: \n");
 
 for(int i = 0; i< 3; i++){
-    printf("students info: %d,%s,%f\n", s[i].adm_no,s[i].marks,s[i].name);
+    printf("students info: %d,%f,%s\n", s[i].adm_no,s[i].marks,s[i].name);
 }
 
 
